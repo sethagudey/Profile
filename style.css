@@ -538,3 +538,6 @@ footer p{
     background:#10b981;
     border-radius:20px;
 }
+.hero h1 span{
+    display:block;
+}
