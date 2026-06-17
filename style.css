@@ -452,3 +452,89 @@ footer p{
         padding:0 6%;
     }
 }
+/* MOBILE MENU */
+
+.nav-links.active{
+    display:flex;
+    flex-direction:column;
+
+    position:absolute;
+    top:80px;
+    left:0;
+
+    width:100%;
+
+    background:#0b1225;
+
+    padding:30px;
+
+    gap:20px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+/* ACTIVE NAV LINK */
+
+.active-link{
+    color:#10b981 !important;
+}
+
+/* SCROLL ANIMATION */
+
+.hidden{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all .8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* SMOOTH CARD HOVER */
+
+.company-card,
+.skill-card,
+.timeline-item,
+.interest-grid div{
+    transition:all .35s ease;
+}
+
+.company-card:hover,
+.skill-card:hover,
+.timeline-item:hover,
+.interest-grid div:hover{
+    transform:translateY(-8px);
+    border-color:#10b981;
+}
+
+/* HERO GLOW */
+
+.hero h1{
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #10b981,
+        #3b82f6
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#050816;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#10b981;
+    border-radius:20px;
+}
