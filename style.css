@@ -538,6 +538,17 @@ footer p{
     background:#10b981;
     border-radius:20px;
 }
-.hero h1 span{
-    display:block;
+.hero h1{
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
