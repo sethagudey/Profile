@@ -149,38 +149,6 @@ window.addEventListener("scroll", () => {
 
 
 // =========================
-// HERO TYPING EFFECT
-// =========================
-
-const heroTitle =
-document.querySelector(".hero h1");
-
-const originalText =
-heroTitle.innerHTML;
-
-heroTitle.innerHTML = "";
-
-let i = 0;
-
-function typeWriter(){
-
-    if(i < originalText.length){
-
-        heroTitle.innerHTML +=
-        originalText.charAt(i);
-
-        i++;
-
-        setTimeout(typeWriter, 25);
-
-    }
-
-}
-
-window.addEventListener("load", typeWriter);
-
-
-// =========================
 // COUNTER ANIMATION
 // =========================
 
