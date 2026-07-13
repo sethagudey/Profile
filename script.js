@@ -55,15 +55,15 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.observe(element);
     });
 
-    // 4. Navbar Structural Shadows on Scroll Actions
+   // 4. Navbar Structural Shadows on Scroll Actions
     const navbar = document.querySelector(".navbar");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 40) {
             navbar.style.boxShadow = "0 12px 40px rgba(0,0,0,0.6)";
-            navbar.style.padding = "1rem 5%";
+            navbar.style.background = "rgba(10, 10, 12, 0.95)"; /* Slight opacity shift instead of hard padding alterations */
         } else {
             navbar.style.boxShadow = "none";
-            navbar.style.padding = "1.5rem 5%";
+            navbar.style.background = "rgba(10, 10, 12, 0.75)";
         }
-    });
+    }, { passive: true }); // Passive flag optimization prevents scroll jank on modern mobile devices
 });
