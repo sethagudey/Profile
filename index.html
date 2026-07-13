@@ -3,107 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S. Agudey | Founder & CEO</title>
+    <title>Seth Agudey | Tech Founder & Cyber Architect</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="cursor-glow"></div>
 
     <header class="navbar">
-        <a href="#" class="logo">A.Agudey</a>
+        <a href="#" class="logo">S. AGUDEY</a>
         <nav class="nav-links">
-            <a href="#about">Venture</a>
-            <a href="#insights">Insights</a>
-            <a href="#contact" class="btn-primary">Let's Build</a>
+            <a href="#about">Core</a>
+            <a href="#ecosystem">Ecosystem</a>
+            <a href="#contact" class="btn-primary">Initiate Briefing</a>
         </nav>
     </header>
-<!-- Hero Section (Updated) -->
+
     <main>
+        
         <section class="hero">
             <div class="hero-content">
-                <p class="hero-tagline">Cybersecurity · Data Science · Blockchain · Venture Architecture</p>
-                <h1 class="hero-title">Engineering the <br><span class="text-gradient">Future Ecosystems</span> of Commerce.</h1>
-                <p class="hero-subtitle">Computer Scientist, Cybersecurity Specialist, and Data Analyst building cross-industry systems. Founder of 5+ transformative enterprises spanning Web3, AgTech, EdTech, and Fractional Real Estate.</p>
+                <p class="hero-tagline">Computer Science · Cybersecurity · Data Analytics · Blockchain</p>
+                <h1 class="hero-title">Engineering Secure, <br><span class="text-gradient">Data-Driven</span> Ecosystems.</h1>
+                <p class="hero-subtitle">Bridging complex data intelligence with hardened security frameworks. Architect and founder of 5+ cross-industry enterprises scaling solutions across Web3, AgTech, EdTech, and Asset Fractionalization.</p>
                 <div class="hero-actions">
-                    <a href="#portfolio" class="btn-main">View Ecosystem</a>
-                    <a href="#contact" class="btn-secondary">Initiate Briefing →</a>
+                    <a href="#ecosystem" class="btn-main">Explore Ecosystem</a>
+                    <a href="#about" class="btn-secondary">Track Record →</a>
                 </div>
             </div>
         </section>
 
-        <!-- Dynamic Ecosystem/Portfolio Section -->
-        <section id="portfolio" class="portfolio-section scroll-reveal">
+        <section id="about" class="about-section scroll-reveal">
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="card-icon">💻</span>
+                    <h3>Computer Science</h3>
+                    <p>Building high-performance backend systems, clean algorithmic logic, and responsive digital infrastructures from the architecture up.</p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon">🛡️</span>
+                    <h3>Cybersecurity</h3>
+                    <p>Implementing strict defense-in-depth security principles, secure access paradigms, and zero-trust data protection environments.</p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon">📊</span>
+                    <h3>Data Analytics & BI</h3>
+                    <p>Converting fragmented operational metrics into interactive intelligence models to forecast growth and maximize product-market fit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ecosystem" class="ecosystem-section scroll-reveal">
             <div class="section-header">
-                <p class="tag">The Ecosystem</p>
-                <h2>Active Ventures & Infrastructure</h2>
-                <p class="section-desc">A portfolio of high-scale platforms designed, secured, and scaled from inception.</p>
+                <span class="eyebrow-tag">Active Infrastructure</span>
+                <h2>Venture Portfolio</h2>
+                <p class="section-subtitle">A collection of specialized platforms built to disrupt market operational inefficiencies.</p>
             </div>
 
-            <!-- Venture Grid -->
-            <div class="portfolio-grid">
+            <div class="filter-wrapper">
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All Systems</button>
+                    <button class="filter-btn" data-filter="core-tech">Web3 & Finance</button>
+                    <button class="filter-btn" data-filter="scale-tech">EdTech & AgTech</button>
+                    <button class="filter-btn" data-filter="infra-tech">PropTech & Security</button>
+                </div>
+            </div>
+
+            <div class="ecosystem-grid">
                 
-                <!-- Trekmara -->
-                <div class="portfolio-card" data-category="web3">
-                    <div class="card-header">
-                        <span class="card-tag">Web3 & Travel</span>
-                        <span class="card-status">Live</span>
+                <div class="venture-card" data-group="core-tech">
+                    <div class="card-meta">
+                        <span class="sector">Web3 / Social Travel</span>
+                        <span class="status status-live">Live</span>
                     </div>
                     <h3>Trekmara</h3>
-                    <p>A social travel marketplace combining content sharing, holiday packages, and iconic landmark digital assets.</p>
+                    <p>A social travel marketplace combining decentralized digital asset integration with comprehensive content discovery engines.</p>
+                    <div class="tech-badge"><span>Blockchain Protocols</span><span>Data Engines</span></div>
                 </div>
 
-                <!-- One Tenth Capital -->
-                <div class="portfolio-card" data-category="fintech">
-                    <div class="card-header">
-                        <span class="card-tag">Fintech & Wealth</span>
-                        <span class="card-status">Institutional</span>
+                <div class="venture-card" data-group="core-tech">
+                    <div class="card-meta">
+                        <span class="sector">Fintech / Ventures</span>
+                        <span class="status status-institutional">Active</span>
                     </div>
                     <h3>One Tenth Capital</h3>
-                    <p>Alternative investment structures and micro-contribution systems maximizing long-term capital efficiency.</p>
+                    <p>Alternative investment framework modeling designed to unlock decentralized financial liquidity tools for modern projects.</p>
+                    <div class="tech-badge"><span>Capital Architecture</span><span>BI Dashboarding</span></div>
                 </div>
 
-                <!-- Pagein -->
-                <div class="portfolio-card" data-category="edtech">
-                    <div class="card-header">
-                        <span class="card-tag">EdTech</span>
-                        <span class="card-status">Scaling</span>
+                <div class="venture-card" data-group="scale-tech">
+                    <div class="card-meta">
+                        <span class="sector">EdTech Hub</span>
+                        <span class="status status-scale">Scaling</span>
                     </div>
                     <h3>Pagein</h3>
-                    <p>End-to-end digital learning infrastructure servicing academic cohorts from primary schools to post-graduate research.</p>
+                    <p>End-to-end digital educational pipelines servicing complex academic cohorts from early primary setups to post-graduate systems.</p>
+                    <div class="tech-badge"><span>LMS Infrastructure</span><span>Cohorts Analytics</span></div>
                 </div>
 
-                <!-- Farmyield -->
-                <div class="portfolio-card" data-category="agtech">
-                    <div class="card-header">
-                        <span class="card-tag">Agribusiness</span>
-                        <span class="card-status">Supply Chain</span>
+                <div class="venture-card" data-group="scale-tech">
+                    <div class="card-meta">
+                        <span class="sector">Agribusiness Supply</span>
+                        <span class="status status-scale">Active</span>
                     </div>
                     <h3>Farmyield</h3>
-                    <p>Data-driven agritech pipeline sourcing fresh farm produce directly from agricultural hubs to consumer endpoints.</p>
+                    <p>A data-informed supply line optimization platform matching organic farm outputs smoothly to scaling industrial markets.</p>
+                    <div class="tech-badge"><span>Logistics Routing</span><span>Data Optimization</span></div>
                 </div>
 
-                <!-- Delxica -->
-                <div class="portfolio-card" data-category="proptech">
-                    <div class="card-header">
-                        <span class="card-tag">PropTech</span>
-                        <span class="card-status">Real Estate</span>
+                <div class="venture-card" data-group="infra-tech">
+                    <div class="card-meta">
+                        <span class="sector">PropTech System</span>
+                        <span class="status status-scale">Operational</span>
                     </div>
                     <h3>Delxica</h3>
-                    <p>Modern real estate frameworks leveraging fractional ownership modeling to democratize property acquisition.</p>
+                    <p>Real estate ecosystem implementing dynamic fractional access modeling to democratize corporate space allocation.</p>
+                    <div class="tech-badge"><span>Fractional Framework</span><span>Asset Processing</span></div>
                 </div>
 
-                <!-- Kleanpad -->
-                <div class="portfolio-card" data-category="tech">
-                    <div class="card-header">
-                        <span class="card-tag">Tech Infrastructure</span>
-                        <span class="card-status">In-Development</span>
+                <div class="venture-card" data-group="infra-tech">
+                    <div class="card-meta">
+                        <span class="sector">Cybersecurity Ops</span>
+                        <span class="status status-dev">Dev-Phase</span>
                     </div>
                     <h3>Kleanpad</h3>
-                    <p>Next-generation software systems engineered with defense-in-depth cybersecurity frameworks.</p>
+                    <p>A resilient cloud infrastructure environment engineered with built-in vulnerability isolation protocols.</p>
+                    <div class="tech-badge"><span>Zero-Trust Architecture</span><span>SecOps</span></div>
                 </div>
 
             </div>
@@ -112,15 +140,15 @@
 
     <footer id="contact" class="footer">
         <div class="footer-content">
-            <h2>Have a vision? <br>Let’s execute.</h2>
-            <p>Direct inquiries for board seats, speaking engagements, and venture partnerships.</p>
-            <a href="mailto:alex@vanceventures.com" class="email-link">Seth@sethagudey.com</a>
+            <h2>Let's build secure <br>infrastructures.</h2>
+            <p>Available for cross-border engineering alignments, data consultancy mandates, and venture capitalization briefings.</p>
+            <a href="mailto:initiate@sethagudey.com" class="email-link">initiate@sethagudey.com</a>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Seth A Agudey. All Rights Reserved.</p>
+            <p>&copy; 2026 Seth Agudey. All rights reserved.</p>
             <div class="footer-socials">
                 <a href="#">LinkedIn</a>
-                <a href="#">Twitter/X</a>
+                <a href="#">GitHub</a>
             </div>
         </div>
     </footer>
