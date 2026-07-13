@@ -27,19 +27,41 @@ html {
 }
 
 /* --- Navigation System --- */
+/* --- Optimized Navigation System --- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding: 1.2rem 5%;
+    
     position: fixed;
-    width: 100%;
+    /* Explicitly pinning both axis edges prevents standard layout blowouts */
     top: 0;
+    left: 0;
+    right: 0; 
     z-index: 100;
+    
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Ensures Safari/iOS background blur compatibility */
     background: rgba(10, 10, 12, 0.75);
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-    transition: var(--cubic-smooth);
+    transition: padding 0.4s cubic-bezier(0.16, 1, 0.3, 1), background 0.4s ease;
+}
+
+/* --- Mobile Viewport Adjustments (Android / iOS Safety) --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 5%; /* Tighten down padding for smaller viewports */
+    }
+    
+    .nav-links a {
+        margin-left: 1rem; /* Shrink structural margin spacing so buttons don't clip off-screen */
+        font-size: 0.85rem;
+    }
+    
+    .btn-primary {
+        padding: 0.5rem 1rem; /* Compact layout footprint for mobile tap targets */
+    }
 }
 
 .logo {
