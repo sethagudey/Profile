@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 1. Ambient Background Mouse Tracking (Desktop Only performance safety)
+    // 1. Desktop Ambient Background Tracking
     const glow = document.querySelector(".cursor-glow");
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 768 && glow) {
         document.addEventListener("mousemove", (e) => {
             glow.style.left = `${e.clientX}px`;
             glow.style.top = `${e.clientY}px`;
         });
     }
 
-    // 2. High-Performance Ecosystem Filtering System
+    // 2. High-Performance Portfolio Filter
     const filterButtons = document.querySelectorAll(".filter-btn");
     const ventureCards = document.querySelectorAll(".venture-card");
 
@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 3. Native Fluid Scroll Reveal Observer
+    // 3. Fluid Content Scroll Intersection Observer
     const visualElements = document.querySelectorAll(".scroll-reveal");
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("active");
-                observer.unobserve(entry.target); // Triggers once for clean execution
+                observer.unobserve(entry.target);
             }
         });
     }, {
@@ -55,15 +55,15 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.observe(element);
     });
 
-   // 4. Navbar Structural Shadows on Scroll Actions
+    // 4. Mobile Passive Shadow Layer Optimization
     const navbar = document.querySelector(".navbar");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 40) {
             navbar.style.boxShadow = "0 12px 40px rgba(0,0,0,0.6)";
-            navbar.style.background = "rgba(10, 10, 12, 0.95)"; /* Slight opacity shift instead of hard padding alterations */
+            navbar.style.background = "rgba(10, 10, 12, 0.95)";
         } else {
             navbar.style.boxShadow = "none";
             navbar.style.background = "rgba(10, 10, 12, 0.75)";
         }
-    }, { passive: true }); // Passive flag optimization prevents scroll jank on modern mobile devices
+    }, { passive: true });
 });
