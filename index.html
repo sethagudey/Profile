@@ -1,487 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ===========================================
-         BASIC META
-    ============================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Qwame | Founder • CEO • Investor</title>
-
-    <meta name="description"
-        content="Official website of Qwame - Founder, CEO, Investor and Entrepreneur building innovative companies across Africa.">
-
-    <meta name="keywords"
-        content="Founder, CEO, Entrepreneur, Investor, Africa, Fintech, Technology">
-
-    <meta name="author" content="Qwame">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Qwame | Founder & CEO">
-    <meta property="og:description"
-        content="Building companies that solve real African problems through technology and innovation.">
-    <meta property="og:type" content="website">
-
-    <!-- Google Fonts -->
+    <title>Seth A. Agudey | Founder & CEO</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- ===========================================
-         PRELOADER
-    ============================================ -->
+    <div class="cursor-glow"></div>
 
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-
-    <!-- ===========================================
-         SCROLL PROGRESS
-    ============================================ -->
-
-    <div id="progress-bar"></div>
-
-    <!-- ===========================================
-         HEADER
-    ============================================ -->
-
-    <header>
-
-        <nav class="navbar">
-
-            <a href="index.html" class="logo">
-                QWAME
-            </a>
-
-            <ul class="nav-links">
-
-                <li><a href="index.html">Home</a></li>
-
-                <li><a href="about.html">About</a></li>
-
-                <li><a href="companies.html">Companies</a></li>
-
-                <li><a href="investments.html">Investments</a></li>
-
-                <li><a href="speaking.html">Speaking</a></li>
-
-                <li><a href="media.html">Media</a></li>
-
-                <li><a href="blog.html">Blog</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-            <button class="menu-btn">
-
-                <i class="fa-solid fa-bars"></i>
-
-            </button>
-
+    <header class="navbar">
+        <a href="#" class="logo">A.VANCE</a>
+        <nav class="nav-links">
+            <a href="#about">Venture</a>
+            <a href="#insights">Insights</a>
+            <a href="#contact" class="btn-primary">Let's Build</a>
         </nav>
-
     </header>
 
-    <!-- ===========================================
-         HERO
-    ============================================ -->
-
-    <section id="hero">
-
-        <div class="hero-content">
-
-            <p class="hero-tag">
-                Founder • CEO • Investor
-            </p>
-
-            <h1>
-
-                Building the Future
-
-                <span>
-
-                    One Company
-
-                </span>
-
-                At A Time.
-
-            </h1>
-
-            <p class="hero-text">
-
-                I build technology companies solving real-world African
-                challenges through innovation, finance, travel,
-                agriculture and digital transformation.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="about.html" class="btn-primary">
-
-                    Explore My Journey
-
-                </a>
-
-                <a href="companies.html" class="btn-secondary">
-
-                    My Companies
-
-                </a>
-
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-tagline">Scaling Ideas into Empires</p>
+                <h1 class="hero-title">Building the <br><span class="text-gradient">Next Generation</span> of Venture.</h1>
+                <p class="hero-subtitle">Alex Vance is a serial entrepreneur, venture builder, and CEO dedicated to transforming disruptive technologies into market leaders.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-main">Partner With Me</a>
+                    <a href="#about" class="btn-secondary">Explore Track Record →</a>
+                </div>
             </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <img src="images/founder.png"
-                alt="Founder Portrait">
-
-        </div>
-
-    </section>
-
-    <!-- ===========================================
-         TRUST SECTION
-    ============================================ -->
-
-    <section id="trusted">
-
-        <p>Featured In</p>
-
-        <div class="logo-slider">
-
-            <span>FORBES</span>
-
-            <span>BBC</span>
-
-            <span>TEDx</span>
-
-            <span>CNN</span>
-
-            <span>Bloomberg</span>
-
-            <span>Business Insider</span>
-
-        </div>
-
-    </section>
-
-    <!-- ===========================================
-         ABOUT PREVIEW
-    ============================================ -->
-
-    <section id="about-preview">
-
-        <div class="about-image">
-
-            <img src="images/about.jpg"
-                alt="About">
-
-        </div>
-
-        <div class="about-content">
-
-            <h2>
-
-                Building Businesses
-                That Matter.
-
-            </h2>
-
-            <p>
-
-                My mission is to create sustainable companies that
-                improve lives while creating wealth, jobs and
-                opportunities across Africa.
-
-            </p>
-
-            <a href="about.html" class="btn-primary">
-
-                Read My Story
-
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- ===========================================
-         STATS
-    ============================================ -->
-
-    <section id="stats">
-
-        <div class="stat">
-
-            <h2>10+</h2>
-
-            <p>Companies</p>
-
-        </div>
-
-        <div class="stat">
-
-            <h2>500K+</h2>
-
-            <p>Customers</p>
-
-        </div>
-
-        <div class="stat">
-
-            <h2>$12M+</h2>
-
-            <p>Transactions</p>
-
-        </div>
-
-        <div class="stat">
-
-            <h2>15+</h2>
-
-            <p>Awards</p>
-
-        </div>
-
-    </section>
-
-    <!-- ===========================================
-         COMPANIES
-    ============================================ -->
-
-    <section id="companies">
-
-        <h2>
-
-            Companies I'm Building
-
-        </h2>
-
-        <div class="company-grid">
-
-            <article class="company-card">
-
-                <h3>One-Tenth Capital</h3>
-
-                <p>Financial Services</p>
-
-            </article>
-
-            <article class="company-card">
-
-                <h3>Farmyield</h3>
-
-                <p>Agriculture Technology</p>
-
-            </article>
-
-            <article class="company-card">
-
-                <h3>Trekmara</h3>
-
-                <p>Travel Technology</p>
-
-            </article>
-
-            <article class="company-card">
-
-                <h3>Kleanpad</h3>
-
-                <p>Cleaning Services</p>
-
-            </article>
-
-            <article class="company-card">
-
-                <h3>Tourwallex</h3>
-
-                <p>Travel Agency</p>
-
-            </article>
-
-        </div>
-
-    </section>
-
-    <!-- ===========================================
-         VISION
-    ============================================ -->
-
-    <section id="vision">
-
-        <blockquote>
-
-            "Africa's next billion-dollar companies will solve
-            everyday problems.
-
-            I'm committed to building them."
-
-        </blockquote>
-
-    </section>
-
-    <!-- ===========================================
-         TIMELINE
-    ============================================ -->
-
-    <section id="timeline">
-
-        <h2>Journey</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <h3>2018</h3>
-                <p>Started my entrepreneurial journey.</p>
+        </section>
+
+        <section id="about" class="stats-section scroll-reveal">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">$150M+</span>
+                    <span class="stat-label">Capital Raised</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3x</span>
+                    <span class="stat-label">Successful Exits</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">10Y+</span>
+                    <span class="stat-label">Executive Leadership</span>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="timeline-item">
-                <h3>2020</h3>
-                <p>Launched technology platforms.</p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2022</h3>
-                <p>Expanded into multiple industries.</p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2026</h3>
-                <p>Scaling globally.</p>
-            </div>
-
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h2>Have a vision? <br>Let’s execute.</h2>
+            <p>Direct inquiries for board seats, speaking engagements, and venture partnerships.</p>
+            <a href="mailto:alex@vanceventures.com" class="email-link">alex@vanceventures.com</a>
         </div>
-
-    </section>
-
-    <!-- ===========================================
-         TESTIMONIALS
-    ============================================ -->
-
-    <section id="testimonials">
-
-        <h2>
-
-            What People Say
-
-        </h2>
-
-        <div class="testimonial-slider">
-
-            <div class="testimonial">
-
-                <p>
-
-                    "A visionary entrepreneur with exceptional leadership."
-
-                </p>
-
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alex Vance. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter/X</a>
             </div>
-
-            <div class="testimonial">
-
-                <p>
-
-                    "One of Africa's most promising founders."
-
-                </p>
-
-            </div>
-
         </div>
-
-    </section>
-
-    <!-- ===========================================
-         NEWSLETTER
-    ============================================ -->
-
-    <section id="newsletter">
-
-        <h2>
-
-            Stay Connected
-
-        </h2>
-
-        <form>
-
-            <input
-                type="email"
-                placeholder="Email Address"
-                required>
-
-            <button type="submit">
-
-                Subscribe
-
-            </button>
-
-        </form>
-
-    </section>
-
-    <!-- ===========================================
-         FOOTER
-    ============================================ -->
-
-    <footer>
-
-        <div class="footer-logo">
-
-            QWAME
-
-        </div>
-
-        <div class="footer-links">
-
-            <a href="#">LinkedIn</a>
-
-            <a href="#">X</a>
-
-            <a href="#">Instagram</a>
-
-            <a href="#">YouTube</a>
-
-        </div>
-
-        <p>
-
-            © 2026 Qwame.
-
-            All Rights Reserved.
-
-        </p>
-
     </footer>
 
-    <!-- ===========================================
-         JAVASCRIPT
-    ============================================ -->
-
-    <script src="js/app.js"></script>
-    <script src="js/animation.js"></script>
-    <script src="js/cursor.js"></script>
-    <script src="js/particles.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
