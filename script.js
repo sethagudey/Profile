@@ -66,5 +66,4 @@ document.addEventListener("DOMContentLoaded", () => {
             navbar.style.padding = "1.5rem 5%";
         }
     });
-});    });
 });
